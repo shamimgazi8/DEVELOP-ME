@@ -1,13 +1,9 @@
-import "./globals.css";
-import { Geist, Geist_Mono } from "next/font/google";
+import "@/styles/globals.css";
 import type { Metadata } from "next";
-
+import "@/styles/fonts.css";
 import Script from "next/script";
-const geistSans = Geist({ variable: "--font-geist-sans", subsets: ["latin"] });
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+import Header from "@/modules/components/@layout/Header";
+import Footer from "@/modules/components/@layout/Footer";
 
 export const metadata: Metadata = {
   title: "Protfolio",
@@ -38,9 +34,11 @@ export default function RootLayout({
         </Script>
       </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`antialiased bg-[url('/bg/bg1.png')] bg-cover bg-center`}
       >
+        <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );

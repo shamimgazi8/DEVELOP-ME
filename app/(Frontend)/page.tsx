@@ -1,13 +1,17 @@
-"use client";
+import Home from "@/modules/home";
+import type { Metadata } from "next";
 
-import ThemeToggle from "@/modules/components/ThemeToggle";
+export const metadata: Metadata = {
+  title: "Raintor",
+  keywords: "developer",
+  description:
+    "We specialize in delivering cutting-edge digital solutions that transform businesses",
+};
 
-export default function Home() {
+export default function HomePage() {
   return (
-    <main className="min-h-screen ">
-      <ThemeToggle />
-      <h1 className="text-4xl font-bold mt-6">Dark Mode Test</h1>
-      <p className="mt-2">Toggle the button to switch themes.</p>
-    </main>
+    <div>
+      <Home />
+    </div>
   );
 }

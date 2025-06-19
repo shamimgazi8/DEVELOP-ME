@@ -9,17 +9,10 @@ const config: Config = {
 
   darkMode: "class",
   theme: {
-    container: {
-      center: true,
-    },
     extend: {
-      boxShadow: {
-        "3xl": "#1e3a8a)",
-      },
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      fontFamily: {
+        sporting: ["'Sporting Grotesque'", "sans-serif"],
+        bwgradual: ["'Bw Gradual DEMO'", "sans-serif"],
       },
     },
   },
