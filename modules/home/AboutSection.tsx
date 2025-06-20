@@ -12,7 +12,7 @@ const About = () => {
       }}
     >
       <div className="  md:m-[200px] flex justify-end flex-col items-end">
-        <Title text="About" color="" />
+        <Title text="About" color="black" />
         {/* Headings */}
         <div className="mt-10 text-end">
           <h1 className="text-[36px] sm:text-[48px] md:text-[78px] font-bold mb-5">
