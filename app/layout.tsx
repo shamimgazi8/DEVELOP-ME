@@ -4,6 +4,7 @@ import "@/styles/fonts.css";
 import Script from "next/script";
 import Header from "@/modules/components/@layout/Header";
 import Footer from "@/modules/components/@layout/Footer";
+import Providers from "./providers";
 
 export const metadata: Metadata = {
   title: "Protfolio",
@@ -37,7 +38,7 @@ export default function RootLayout({
         className={`antialiased bg-[url('/bg/bg1.png')] bg-contain bg-start bg-no-repeat`}
       >
         <Header />
-        {children}
+        <Providers>{children}</Providers>
         <Footer />
       </body>
     </html>

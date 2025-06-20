@@ -36,8 +36,11 @@ const Header = () => {
           <Link href={"/protfolio"}>
             <li className="hover:text-green-600 cursor-pointer">Protfolio</li>
           </Link>
-          <Link href={"/blog"}>
-            <li className="hover:text-green-600 cursor-pointer">Blog</li>
+          <Link href={"/user-feed"}>
+            <li className="hover:text-green-600 cursor-pointer">User Feed</li>
+          </Link>
+          <Link href={"/map-viewer"}>
+            <li className="hover:text-green-600 cursor-pointer">Map</li>
           </Link>
         </ul>
         <Button
@@ -69,8 +72,11 @@ const Header = () => {
             <Link href={"/protfolio"} onClick={() => setIsOpen(false)}>
               <li className="hover:text-green-600 cursor-pointer">Protfolio</li>
             </Link>
-            <Link href={"/blog"} onClick={() => setIsOpen(false)}>
-              <li className="hover:text-green-600 cursor-pointer">Blog</li>
+            <Link href={"/user-feed"} onClick={() => setIsOpen(false)}>
+              <li className="hover:text-green-600 cursor-pointer">User Feed</li>
+            </Link>
+            <Link href={"/map-viewer"}>
+              <li className="hover:text-green-600 cursor-pointer">Map</li>
             </Link>
           </ul>
 

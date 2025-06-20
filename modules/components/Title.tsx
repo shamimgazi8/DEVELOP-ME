@@ -3,14 +3,15 @@ import { IoIosArrowRoundDown } from "react-icons/io";
 
 interface TitleProps {
   text: string;
-  color: string; // e.g. "black", "red", etc.
+  color: string;
 }
 
 const Title = ({ text, color }: TitleProps) => {
   return (
     <div className="flex items-center  group">
       <div
-        className={`w-[44px] h-[44px] rounded-full border-[2px]  border-[color:var(--text-color)] flex items-center justify-center 
+        className={`w-[44px] h-[44px] rounded-full border-[2px]  border-[color:var(--text-color)]"
+          flex items-center justify-center 
         transition-transform duration-300 group-hover:translate-x-[5px]`}
       >
         <IoIosArrowRoundDown className="text-[25px]" />
