@@ -4,6 +4,7 @@ import WorkedOn from "./WorkedOn";
 const About = () => {
   return (
     <section
+      data-aos="fade-up"
       className="relative  bg-no-repeat bg-left bg-cover pt-20 px-6 section-top-shadow md:-translate-y-32 z-[-1004]"
       style={{
         backgroundImage: "url('/bg/bg2.png')",

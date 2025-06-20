@@ -44,7 +44,10 @@ const Skills = () => {
   };
 
   return (
-    <section className="p-[50px] bg-black m-[15px] rounded-[40px] z-50">
+    <section
+      data-aos="fade-down"
+      className="p-[50px] bg-black m-[15px] rounded-[40px] z-50"
+    >
       <Title text="Work Progress" color="white" />
 
       <div className="flex flex-col md:flex-row justify-between items-start md:items-center">

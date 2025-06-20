@@ -6,6 +6,7 @@ import Title from "../components/Title";
 const ContactSection = () => {
   return (
     <section
+      data-aos="fade-up"
       className="p-10  grid md:grid-cols-[2fr_1fr] bg-cover bg-no-repeat bg-center section-top-shadow"
       style={{
         backgroundImage: `url('/bg/bg3.png')`,

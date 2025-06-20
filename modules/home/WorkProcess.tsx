@@ -26,7 +26,10 @@ const cardData = [
 
 const WorkProcess = () => {
   return (
-    <section className="p-10 bg-[#141414] mx-4 rounded-[40px] mt-[-128px]">
+    <section
+      data-aos="fade-down"
+      className="p-10 bg-[#141414] mx-4 rounded-[40px] mt-[-128px]"
+    >
       {/* Header */}
       <div className="text-center mb-10">
         <Title text="Work Process" color="white" />

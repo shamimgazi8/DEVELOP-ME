@@ -1,6 +1,9 @@
 const Footer = () => {
   return (
-    <section className="p-[50px] bg-black m-[15px] rounded-[40px] z-50 grid md:grid-cols-[1fr_2fr]">
+    <section
+      data-aos="zoom-in"
+      className="p-[50px] bg-black m-[15px] rounded-[40px] z-50 grid md:grid-cols-[1fr_2fr]"
+    >
       <div className=" flex flex-col justify-between">
         <h1
           className="uppercase font-extrabold text-[34px] leading-[34px] text-[#C5FF41]"

@@ -4,7 +4,10 @@ import SocialCard from "../components/SocialCard";
 
 const Hero = () => {
   return (
-    <section className="flex-1  mt-14 px-4 sm:px-6 md:px-[50px] mb-[100px]">
+    <section
+      data-aos="fade-up"
+      className="flex-1  mt-14 px-4 sm:px-6 md:px-[50px] mb-[100px]"
+    >
       {/* Headings */}
       <div className="flex flex-col gap-4">
         <h1 className="text-[36px] sm:text-[48px] md:text-[78px] font-bold">

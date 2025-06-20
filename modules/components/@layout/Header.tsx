@@ -6,7 +6,6 @@ import Button from "../Button";
 import { LiaLongArrowAltRightSolid } from "react-icons/lia";
 import { HiMenu, HiX } from "react-icons/hi";
 import Image from "next/image";
-import ThemeToggleButton from "../ThemeToggle";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);

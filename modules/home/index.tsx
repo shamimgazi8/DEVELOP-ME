@@ -5,7 +5,6 @@ import About from "./AboutSection";
 import ContactSection from "./ContactSection";
 import Hero from "./HeroSection";
 import Skills from "./SkillsSections";
-import WorkedOn from "./WorkedOn";
 import WorkProcess from "./WorkProcess";
 
 export default function Home() {

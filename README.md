@@ -1,5 +1,7 @@
 # Next.js Portfolio & User Feed Project
 
+##### Frontend Developer - Technical Assessment (RAINTOR)
+
 This project demonstrates a modern frontend application built with **Next.js** featuring a developer portfolio homepage, real-time location sharing, and an infinite scroll user feed.
 
 ---
@@ -26,6 +28,7 @@ This project demonstrates a modern frontend application built with **Next.js** f
 - SignalR methods used:
   - `SendLatLon(lat, lon, userName)`
   - `ReceiveLatLon` event listener for location updates
+    📍 You can access the Location Sharing interface via the "Map" navigation link in the header.
 
 ### 3. Infinite Scroll User Feed
 
@@ -36,6 +39,7 @@ This project demonstrates a modern frontend application built with **Next.js** f
 - Prepared for virtualization with libraries like `react-window` for large datasets
 - Keyboard accessible and ARIA-compliant UI
 - API Endpoint: `https://tech-test.raintor.com/api/users/GetUsersList?take=10&skip=0`
+  👥 User Feed is available under the "User Feed" navigation item.
 
 ---
 
