@@ -16,7 +16,7 @@ export default function Home() {
       <WorkProcess />
       <ContactSection />
 
-      <div className="fixed bottom-[100px] right-0 z-50  p-2 rounded-l-2xl bg-[color:var(--text-color)]">
+      <div className="fixed top-[100px] right-0 z-50  p-2 rounded-l-3xl bg-[color:var(--text-color)]">
         <ThemeToggleButton />
       </div>
     </>

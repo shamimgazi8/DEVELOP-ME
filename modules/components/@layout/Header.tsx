@@ -51,48 +51,52 @@ const Header = () => {
       {/* Mobile Hamburger Button */}
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="md:hidden text-2xl text-black z-50"
+        className="md:hidden text-2xl text-[color:var(--text-color)] z-50"
       >
         {isOpen ? <HiX /> : <HiMenu />}
       </button>
 
       {/* Mobile Menu */}
-      {isOpen && (
-        <div className="absolute top-full left-0 w-full bg-white shadow-md rounded-b-2xl p-6 flex flex-col gap-4 md:hidden z-40 ">
-          <ul className="flex flex-col gap-4  text-[16px] font-normal">
-            <Link href={"/"} onClick={() => setIsOpen(false)}>
-              <li className="hover:text-green-600 cursor-pointer border-[color:var(--text-color)] ">
-                Home
-              </li>
-            </Link>
-            <Link href={"/about"} onClick={() => setIsOpen(false)}>
-              <li className="hover:text-green-600 cursor-pointer">About</li>
-            </Link>
-            <Link href={"/protfolio"} onClick={() => setIsOpen(false)}>
-              <li className="hover:text-green-600 cursor-pointer">Protfolio</li>
-            </Link>
-            <Link href={"/user-feed"} onClick={() => setIsOpen(false)}>
-              <li className="hover:text-green-600 cursor-pointer">User Feed</li>
-            </Link>
-            <Link href={"/map-viewer"}>
-              <li className="hover:text-green-600 cursor-pointer">Map</li>
-            </Link>
-          </ul>
+      <div
+        className={`absolute top-full left-0 w-full bg-[color:var(--background-color)] shadow-md rounded-b-2xl p-6 flex flex-col gap-4 md:hidden z-40 transform transition-all duration-300 ease-in-out ${
+          isOpen
+            ? "opacity-100 translate-y-0 pointer-events-auto"
+            : "opacity-0 -translate-y-4 pointer-events-none"
+        }`}
+      >
+        <ul className="flex flex-col gap-4  text-[16px] font-normal">
+          <Link href={"/"} onClick={() => setIsOpen(false)}>
+            <li className="hover:text-green-600 cursor-pointer border-[color:var(--text-color)] ">
+              Home
+            </li>
+          </Link>
+          <Link href={"/about"} onClick={() => setIsOpen(false)}>
+            <li className="hover:text-green-600 cursor-pointer">About</li>
+          </Link>
+          <Link href={"/protfolio"} onClick={() => setIsOpen(false)}>
+            <li className="hover:text-green-600 cursor-pointer">Protfolio</li>
+          </Link>
+          <Link href={"/user-feed"} onClick={() => setIsOpen(false)}>
+            <li className="hover:text-green-600 cursor-pointer">User Feed</li>
+          </Link>
+          <Link href={"/map-viewer"}>
+            <li className="hover:text-green-600 cursor-pointer">Map</li>
+          </Link>
+        </ul>
 
-          <Button
-            text="Start Project"
-            icon={
-              <Image
-                src="/arrow.png"
-                alt="arrow"
-                width={18}
-                height={18}
-                className="object-contain"
-              />
-            }
-          />
-        </div>
-      )}
+        <Button
+          text="Start Project"
+          icon={
+            <Image
+              src="/arrow.png"
+              alt="arrow"
+              width={18}
+              height={18}
+              className="object-contain "
+            />
+          }
+        />
+      </div>
     </nav>
   );
 };
