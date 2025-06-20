@@ -12,14 +12,14 @@ const Hero = () => {
       <div className="flex flex-col gap-4">
         <h1 className="text-[36px] sm:text-[48px] md:text-[78px] font-bold">
           Trusted{" "}
-          <span className="bg-[color:var(--text-color)] text-[color:var(--background-color)]  rounded-md leading-32 mr-2 px-2">
+          <span className="bg-[color:var(--text-color)] text-[color:var(--background-color)]  rounded-md md:leading-32 leading-1 mr-2 px-2">
             Partner
           </span>
           for
         </h1>
         <h1 className="text-[36px] sm:text-[48px] md:text-[78px] font-bold">
           Your Website{" "}
-          <span className="bg-[color:var(--text-color)] text-[color:var(--background-color)]  rounded-md leading-32 mr-2 px-2">
+          <span className="bg-[color:var(--text-color)] text-[color:var(--background-color)]  rounded-md md:leading-32 leading-1 mr-2 px-2">
             Develop.
           </span>
         </h1>

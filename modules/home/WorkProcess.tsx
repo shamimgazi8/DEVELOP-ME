@@ -28,20 +28,23 @@ const WorkProcess = () => {
   return (
     <section
       data-aos="fade-down"
-      className="p-10 bg-[#141414] mx-4 rounded-[40px] mt-[-128px]"
+      className="p-10 bg-[#141414] mx-4 rounded-[40px] md:mt-[-128px] mt-5"
     >
       {/* Header */}
       <div className="flex flex-col items-center mb-15 mt-10">
         <div className="w-full flex items-center justify-center relative">
           {/* Title aligned to the start */}
-          <div className="absolute left-0">
+          <div className="absolute left-0 md:flex hidden">
             <Title text="Work Process" color="white" />
           </div>
 
           {/* Heading centered */}
-          <p className="text-[40px] sm:text-[58px] text-white font-bold text-center">
+          <p className="md:text-[40px] text-[25px] mb-5 md:mb-0  text-white font-bold text-center">
             My Work Process
           </p>
+        </div>
+        <div className="  md:hidden flex">
+          <Title text="Work Process" color="white" />
         </div>
       </div>
 

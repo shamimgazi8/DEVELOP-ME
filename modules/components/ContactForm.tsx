@@ -40,7 +40,7 @@ const ContactForm: React.FC = () => {
         <div className="flex items-center justify-center gap-3 pt-2">
           <button className=" border  border-white rounded-full py-2 pr-4 flex items-center justify-center gap-2 leading-3 transition-all duration-300 hover:pl-2 cursor-pointer">
             <div
-              className="w-[38px] h-[38px] rounded-full border border-white flex items-center justify-center 
+              className="md:w-[38px] md:h-[38px] md:p-0 p-1 rounded-full border border-white flex items-center justify-center 
         transition-transform duration-300 group-hover:translate-x-[5px]"
             >
               <IoIosSend />
@@ -54,7 +54,7 @@ const ContactForm: React.FC = () => {
           or
           <button className=" border  border-white rounded-full py-2 pr-4 flex items-center justify-center gap-2 leading-3 transition-all duration-300 hover:pl-2 cursor-pointer">
             <div
-              className="w-[38px] h-[38px] rounded-full border border-white flex items-center justify-center 
+              className="md:w-[38px] md:h-[38px] md:p-0 p-1 rounded-full border border-white flex items-center justify-center 
         transition-transform duration-300 group-hover:translate-x-[5px]"
             >
               <IoMail />
@@ -69,9 +69,10 @@ const ContactForm: React.FC = () => {
       </form>
 
       {/* Footer */}
-      <div className="flex flex-col items-center justify-between mt-8 text-sm gap-3 sm:flex-row sm:justify-between">
+      <div className="flex flex-col items-center justify-start text-sm gap-3 sm:flex-row sm:justify-start mt-15">
         <span className="text-gray-400">@williamrey</span>
         <div className="flex items-center gap-4 text-lg">
+          <p>-------</p>
           <a href="#" className="hover:text-lime-400 transition">
             <FaFacebookF />
           </a>

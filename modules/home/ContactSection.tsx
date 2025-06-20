@@ -16,14 +16,14 @@ const ContactSection = () => {
       {/* Header */}
       <div className="text-center mb-10">
         <Title text="Contact" color="black" />
-        <h1 className="text-[36px] sm:text-[48px] md:text-[78px] font-bold text-start mt-10 whitespace-nowrap">
+        <h1 className="text-[26px] sm:text-[48px] md:text-[78px] font-bold text-start mt-10 whitespace-nowrap">
           Interested in <br />
           <span className="bg-[color:var(--text-color)] text-[color:var(--background-color)]  rounded-md px-2">
             work
           </span>{" "}
           together?
         </h1>
-        <p className="text-start mt-10">
+        <p className="text-start mt-10 md:w-[70%]">
           We start every new client interaction with an in-depth discovery call
           where we get to know each other
         </p>
@@ -32,7 +32,7 @@ const ContactSection = () => {
         </div>
       </div>
 
-      <div>
+      <div className="w-full">
         <ContactForm />
       </div>
     </section>
