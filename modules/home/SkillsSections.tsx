@@ -48,7 +48,7 @@ const Skills = () => {
       data-aos="fade-down"
       className="p-[50px] bg-black m-[15px] rounded-[40px] z-50"
     >
-      <Title text="Work Progress" color="white" />
+      <Title text="Why Choose me" color="white" />
 
       <div className="flex flex-col md:flex-row justify-between items-start md:items-center">
         <h1 className="text-white text-[36px] md:text-[58px] leading-[46px] md:leading-[86px] mt-[50px]">

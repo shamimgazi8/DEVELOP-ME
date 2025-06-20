@@ -31,11 +31,18 @@ const WorkProcess = () => {
       className="p-10 bg-[#141414] mx-4 rounded-[40px] mt-[-128px]"
     >
       {/* Header */}
-      <div className="text-center mb-10">
-        <Title text="Work Process" color="white" />
-        <p className="text-[40px] sm:text-[58px] text-white font-bold mt-4">
-          My Work Process
-        </p>
+      <div className="flex flex-col items-center mb-15 mt-10">
+        <div className="w-full flex items-center justify-center relative">
+          {/* Title aligned to the start */}
+          <div className="absolute left-0">
+            <Title text="Work Process" color="white" />
+          </div>
+
+          {/* Heading centered */}
+          <p className="text-[40px] sm:text-[58px] text-white font-bold text-center">
+            My Work Process
+          </p>
+        </div>
       </div>
 
       {/* Cards */}
