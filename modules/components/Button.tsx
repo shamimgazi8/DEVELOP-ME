@@ -7,9 +7,9 @@ interface ButtonProps {
 
 const Button = ({ text, icon }: ButtonProps) => {
   return (
-    <button className="group border border-black rounded-full py-2 pr-4 flex items-center justify-center gap-2 leading-3 transition-all duration-300 hover:pl-2 cursor-pointer">
+    <button className="group border  border-[color:var(--text-color)] rounded-full py-2 pr-4 flex items-center justify-center gap-2 leading-3 transition-all duration-300 hover:pl-2 cursor-pointer">
       <div
-        className="w-[38px] h-[38px] rounded-full border border-black flex items-center justify-center 
+        className="w-[38px] h-[38px] rounded-full border border-[color:var(--text-color)] flex items-center justify-center 
         transition-transform duration-300 group-hover:translate-x-[5px]"
       >
         {icon}

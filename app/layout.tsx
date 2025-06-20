@@ -34,7 +34,7 @@ export default function RootLayout({
         </Script>
       </head>
       <body
-        className={`antialiased bg-[url('/bg/bg1.png')] bg-cover bg-center`}
+        className={`antialiased bg-[url('/bg/bg1.png')] bg-contain bg-start bg-no-repeat`}
       >
         <Header />
         {children}

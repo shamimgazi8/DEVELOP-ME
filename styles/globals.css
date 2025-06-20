@@ -4,6 +4,12 @@
     @apply max-w-[1350px] px-5 mx-auto w-full;
   }
 }
+@font-face {
+  font-family: "Bw Gradual DEMO";
+  src: url("/fonts/Bw Gradual DEMO Black.woff2") format("woff2");
+  font-weight: 800;
+  font-style: normal;
+}
 :root {
   --background-color: #ffffff;
   --text-color: #000000;
@@ -16,4 +22,33 @@ body {
   font-family: "Sporting Grotesque", sans-serif;
   -webkit-overflow-scrolling: touch;
   overflow-x: hidden;
+}
+@layer utilities {
+  @keyframes spin-slow {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  .animate-spin-slow {
+    animation: spin-slow 8s linear infinite;
+  }
+}
+
+.carousel-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 15rem;
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  pointer-events: none;
+  background: linear-gradient(to left, rgba(0, 0, 0, 0.993), transparent);
+  opacity: 0.8;
+  z-index: 10;
 }

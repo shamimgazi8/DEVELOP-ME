@@ -1,47 +1,25 @@
 "use client";
 
-import { IoMdCall } from "react-icons/io";
-import Button from "../components/Button";
-import SocialCard from "../components/SocialCard";
+import ThemeToggleButton from "../components/ThemeToggle";
+import About from "./AboutSection";
+import ContactSection from "./ContactSection";
+import Hero from "./HeroSection";
+import Skills from "./SkillsSections";
+import WorkedOn from "./WorkedOn";
+import WorkProcess from "./WorkProcess";
 
 export default function Home() {
   return (
-    <main className="flex-1 min-h-screen mt-14 px-4 sm:px-6 md:px-[50px]">
-      {/* Headings */}
-      <div className="flex flex-col gap-4">
-        <h1 className="text-[36px] sm:text-[48px] md:text-[78px] font-bold">
-          Trusted{" "}
-          <span className="bg-black text-white rounded-md leading-32 mr-2 px-2">
-            Partner
-          </span>
-          for
-        </h1>
-        <h1 className="text-[36px] sm:text-[48px] md:text-[78px] font-bold">
-          Your Website{" "}
-          <span className="bg-black text-white rounded-md leading-32 mr-2 px-2">
-            Develop.
-          </span>
-        </h1>
-      </div>
+    <>
+      <Hero />
+      <Skills />
+      <About />
+      <WorkProcess />
+      <ContactSection />
 
-      <div className="grid grid-cols-1 md:grid-cols-[1fr_3fr] mt-10  pt-5 gap-8">
-        <div className="flex justify-center md:justify-start">
-          <SocialCard />
-        </div>
-        <div className="flex flex-col gap-8 text-center md:text-left">
-          <div className="space-y-2">
-            <p className="text-[16px] sm:text-[18px]">
-              Building the world's best marketing websites for over a decade.
-            </p>
-            <p className="text-[16px] sm:text-[18px]">
-              Your trusted partner for strategy, design, and dev.
-            </p>
-          </div>
-          <div className="flex justify-center md:justify-start">
-            <Button text="Schedule a Call" icon={<IoMdCall size={18} />} />
-          </div>
-        </div>
+      <div className="fixed bottom-[100px] right-0 z-50  p-2 rounded-l-2xl bg-[color:var(--text-color)]">
+        <ThemeToggleButton />
       </div>
-    </main>
+    </>
   );
 }
