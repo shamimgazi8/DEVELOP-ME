@@ -1,36 +1,82 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Next.js Portfolio & User Feed Project
+
+This project demonstrates a modern frontend application built with **Next.js** featuring a developer portfolio homepage, real-time location sharing, and an infinite scroll user feed.
+
+---
+
+## Features
+
+### 1. Developer Portfolio Home Page
+
+- Responsive, pixel-perfect UI based on [Figma design](https://www.figma.com/design/5K0twoVnr0hDHe5EoB5jFi/Portfolio?node-id=73-446&p=f)
+- Built with Next.js and styled using Tailwind CSS
+- Component-based architecture with reusable components (`Button`, `Card`, etc.)
+- Dark/Light mode toggle with persistence using `localStorage`
+- Mobile-first and accessible with ARIA roles and keyboard navigation
+- Smooth animations and page transitions for enhanced UX
+
+### 2. Real-Time Location Sharing
+
+- Real-time bi-directional location updates using SignalR WebSocket client
+- Two interfaces:
+  - User A: Sends live or simulated GPS coordinates
+  - User B: Receives and displays updates on a Leaflet map
+- SignalR connection logic encapsulated in a custom React hook (`useSignalR`)
+- SignalR Hub URL: `https://tech-test.raintor.com/Hub`
+- SignalR methods used:
+  - `SendLatLon(lat, lon, userName)`
+  - `ReceiveLatLon` event listener for location updates
+
+### 3. Infinite Scroll User Feed
+
+- Scrollable, paginated user list with infinite scroll using React Query
+- Modular `<UserCard />` component to display user details
+- Skeleton loaders while fetching data for better UX
+- Error boundaries and fallback UI for robust error handling
+- Prepared for virtualization with libraries like `react-window` for large datasets
+- Keyboard accessible and ARIA-compliant UI
+- API Endpoint: `https://tech-test.raintor.com/api/users/GetUsersList?take=10&skip=0`
+
+---
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+- Node.js v16 or higher
+- npm or yarn package manager
+
+### Installation
 
 ```bash
-npm run dev
+git clone <your-repository-url>
+cd <project-folder>
+npm install
+
+
+
+Running Tests
+This project uses Jest and React Testing Library for unit and integration tests.
+
+To run tests:
+
+bash
+Copy
+Edit
+npm test
+
 # or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
+yarn test
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Additional Notes
+Theme preference (dark/light) is saved to localStorage and loaded on app start.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+SignalR connections handle reconnections and cleanup on unmount.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Infinite scroll leverages Intersection Observer API for efficient pagination.
 
-## Learn More
+Accessibility features include proper ARIA roles and keyboard navigation.
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Animations and transitions improve UI responsiveness and interactivity.
